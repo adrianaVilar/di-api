@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API - DI</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Exercício 01</h1>
+      <h2>Buscar banco</h2>
+      <label for="code">Digite o código ou busque por todos </label>
+      <input type="number" id="code" placeholder="Ex.: 1, 0, 77">
+      <input type="button" value="Buscar por código" id="search">
+      <input type="button" value="Buscar todos" id="search-all">
+      <hr>
+
+      <h2>Consultar feriados nacionais</h2>
+      <label for="year">Pesquise por ano ou pelo ano atual </label>
+      <input type="number" id="year" placeholder="Digite o ano">
+      <input type="button" value="Buscar por ano" id="search-year">
+      <input type="button" value="Buscar pelo ano atual" id="search-2024-year">
+      <hr>
+
+      <div id="mostra" class="result"></div>
+    </div>
+
+    <div class="container">
+      <h1>Exercício 02</h1>
+      <input type="button" value="Requisição com promisse all" id="request-all">
+
+      <input type="button" value="Requisição com promisse race" id="request-race">
+      <hr>
+
+      <div id="mostra2" class="result"></div>
+    </div>
+
+    
+
+    <script src="js/apiBanco.js"></script>
+    <script src="js/apiFeriado.js"></script>
+    <script src="js/apisPromisse.js"></script>
+
+  </body>
+</html>
